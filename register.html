@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Register – 1KunTalaba</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">
+        <img src="logo.png" alt="1KunTalaba Logo" class="site-logo" />
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="map.html">Map</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="#">Vlogs</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="registration-page">
+    <h1>Student Registration</h1>
+    <p>Book your 1-day campus visit with a student mentor.</p>
+
+    <form action="#" method="post" enctype="multipart/form-data" class="registration-form">
+      <label for="name">Full Name *</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="grade">Grade/Class *</label>
+      <input type="text" id="grade" name="grade" required />
+
+      <label for="city">City *</label>
+      <input type="text" id="city" name="city" required />
+
+      <label for="email">Email *</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="university">Select University *</label>
+      <select id="university" name="university" required>
+        <option value="" disabled selected>Choose...</option>
+        <option value="nuu">National University of Uzbekistan</option>
+        <option value="nuu">New Uzbekistan University</option>
+        <option value="tuit">TUIT</option>
+        <option value="wiut">Westminster University</option>
+        <option value="other">Other...</option>
+      </select>
+
+      <label for="visit-date">Preferred Visit Date *</label>
+      <input type="date" id="visit-date" name="visit-date" required />
+
+      <label for="idcard">Upload ID Card (JPEG/PNG or PDF) *</label>
+      <input type="file" id="idcard" name="idcard" accept=".jpg,.jpeg,.png,.pdf" required />
+
+      <label for="note">Any Additional Notes (optional)</label>
+      <textarea id="note" name="note" rows="4" placeholder="Tell us anything we should know..."></textarea>
+
+      <button type="submit" class="cta-button">Submit Registration</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 1KunTalaba. All rights reserved.</p>
+  </footer>
+</body>
+</html>
